@@ -418,7 +418,8 @@ main {
 
 @media (max-width: 768px) {
   .submission {
-    padding: 2.5rem 0 2rem;
+    padding: 1rem 0 0;
+    margin: 1rem 0 2.5rem;
   }
 
   hr {
@@ -437,7 +438,7 @@ main {
   }
   main{
     padding: 1.5rem;
-    border-bottom-right-radius: 10rem;
+    border-bottom-right-radius: 8rem;
   }
   .zodiac{
     font-size: 1rem;
