@@ -28,7 +28,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-+ Personal Challenge:
+Personal Challenge:
 - Users can view their zodiac sign name and the chinese zodiac animal name based on their birthdate.
 
 ### Screenshot
@@ -43,8 +43,8 @@ This is a screenshot of the mobile version of the application.
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f)
-- Live Site URL: [Live Site](https://age-calculator-with-zodiac.netlify.app/)
+- Solution URL: [Solution - Frontend Mentor](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f)
+- Live Site URL: [Age Calculator](https://age-calculator-with-zodiac.netlify.app/)
 
 ## My process
 

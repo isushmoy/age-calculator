@@ -69,36 +69,39 @@ function calculateAge() {
   let diffDays = currentDay - parseInt(day.value);
 
   // If the current month and day are earlier than the birth month and day,
-  if (diffMonths < 0 || (diffMonths === 0 && diffDays < 0)) {
+  if (diffMonths < 0 || (diffMonths == 0 && diffDays < 0)) {
     // Adjust the difference in years
     diffYears--;
-
     // Add 12 to the difference in months to get a positive value
     diffMonths = 12 + diffMonths;
-
-    // If the current day is positive and earlier than the birth day, increment the month difference
-    if (diffMonths <= 12 && diffDays > 0) {
-      diffMonths++;
-    }
-
-    // If the current days are negative or earlier than the birth day, adjust the difference
-    if (diffDays < 0) {
-      // Get the last day of the birth month
-      const lastDayOfMonth = new Date(
-        parseInt(year.value),
-        parseInt(month.value),
-        0
+  }
+  
+  // If the current day is positive and earlier than the birth day, increment the month difference
+  if (diffMonths <= 12 && diffDays >= 0) {
+    diffMonths++;
+  }
+  
+  // If the current days are negative or earlier than the birth day, adjust the difference
+  if (diffDays < 0) {
+    // Get the last day of the birth month
+    const lastDayOfMonth = new Date(
+      parseInt(year.value),
+      parseInt(month.value),
+      0
       );
       // Add the last day of the birth month to the difference to get a positive value
       diffDays = lastDayOfMonth.getDate() + diffDays;
     }
-
+    
     // If the month is 12, represent it as 0 (January of the following year)
     if (diffMonths == 12) {
       diffMonths = 0;
     }
-  }
-
+    // If the months are same and the days same or more
+    if(diffMonths == 0 && diffDays >= 0){
+      diffYears++;
+    }
+  
   // Return the calculated age as an object containing years, months, and days
   return { years: diffYears, months: diffMonths, days: diffDays };
 }
@@ -228,7 +231,7 @@ function calculate() {
         <div class="inputs row mb-3">
           <!-- the :class only applies the css if the boolean inside is true-->
           <!-- the @keyup.enter is used as an event handler for enter, it can only be used in input fields-->
-          <div class="day col-3">
+          <div class="day col-4 col-md-3">
             <label
               for="day"
               class="form-label"
@@ -255,7 +258,7 @@ function calculate() {
               Must be a valid day
             </p>
           </div>
-          <div class="month col-3">
+          <div class="month col-4 col-md-3">
             <label
               for="month"
               class="form-label"
@@ -282,7 +285,7 @@ function calculate() {
               Must be a valid month
             </p>
           </div>
-          <div class="year col-3">
+          <div class="year col-4 col-md-3">
             <label
               for="year"
               class="form-label"
@@ -311,8 +314,8 @@ function calculate() {
           </div>
         </div>
         <div class="submission row-lg d-flex align-items-center">
-          <hr class="col-lg-10" />
-          <div class="col-lg-2 circle">
+          <hr class="col-md-10" />
+          <div class="col-md-2 circle">
             <!-- the prevent is used to not let it reload the page -->
             <img
               class="img-fluid"
@@ -405,8 +408,15 @@ main {
   margin-bottom: 0.3rem;
   color: hsl(0, 1%, 44%);
 }
+.zodiac {
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  margin: 2.5rem auto;
+  line-height: 0;
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .submission {
     padding: 2.5rem 0 2rem;
   }
@@ -423,15 +433,17 @@ main {
     top: 35%;
   }
   .result {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
+  main{
+    padding: 1.5rem;
+    border-bottom-right-radius: 10rem;
+  }
+  .zodiac{
+    font-size: 1rem;
+    margin: 2rem auto;
+  }
+
 }
 
-.zodiac {
-  font-size: 1.1rem;
-  font-style: normal;
-  font-weight: 700;
-  margin: 2.5rem auto;
-  line-height: 0;
-}
 </style>
