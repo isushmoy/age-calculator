@@ -33,15 +33,17 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Screenshot](./src/assets/screenshots/screenshot-desktop.png)
 This is a screenshot of the desktop version of the application.
 
-![Mobile Screenshot](./src/assets/screenshots/screenshot-mobile.png)
+![Desktop Screenshot](./src/assets/screenshots/screenshot-desktop.png)
+
 This is a screenshot of the mobile version of the application.
+
+![Mobile Screenshot](./src/assets/screenshots/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f)
 - Live Site URL: [Live Site](https://age-calculator-with-zodiac.netlify.app/)
 
 ## My process
