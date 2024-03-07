@@ -75,12 +75,12 @@ function calculateAge() {
     // Add 12 to the difference in months to get a positive value
     diffMonths = 12 + diffMonths;
   }
-  
+
   // If the current day is positive and earlier than the birth day, increment the month difference
   if (diffMonths <= 12 && diffDays >= 0) {
     diffMonths++;
   }
-  
+
   // If the current days are negative or earlier than the birth day, adjust the difference
   if (diffDays < 0) {
     // Get the last day of the birth month
@@ -88,20 +88,20 @@ function calculateAge() {
       parseInt(year.value),
       parseInt(month.value),
       0
-      );
-      // Add the last day of the birth month to the difference to get a positive value
-      diffDays = lastDayOfMonth.getDate() + diffDays;
-    }
-    
-    // If the month is 12, represent it as 0 (January of the following year)
-    if (diffMonths == 12) {
-      diffMonths = 0;
-    }
-    // If the months are same and the days same or more
-    if(diffMonths == 0 && diffDays >= 0){
-      diffYears++;
-    }
-  
+    );
+    // Add the last day of the birth month to the difference to get a positive value
+    diffDays = lastDayOfMonth.getDate() + diffDays;
+  }
+
+  // If the month is 12, represent it as 0 (January of the following year)
+  if (diffMonths == 12) {
+    diffMonths = 0;
+  }
+  // If the months are same and the days same or more
+  if (diffMonths == 0 && diffDays >= 0) {
+    diffYears++;
+  }
+
   // Return the calculated age as an object containing years, months, and days
   return { years: diffYears, months: diffMonths, days: diffDays };
 }
@@ -436,15 +436,13 @@ main {
   .result {
     font-size: 2.8rem;
   }
-  main{
+  main {
     padding: 1.5rem;
     border-bottom-right-radius: 8rem;
   }
-  .zodiac{
+  .zodiac {
     font-size: 1rem;
     margin: 2rem auto;
   }
-
 }
-
 </style>
