@@ -34,7 +34,6 @@ This is a screenshot of the mobile version of the application.
 
 ### Links
 
-- Solution URL: [Solution - Frontend Mentor]()
 - Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
 
 ### Technologies Used
