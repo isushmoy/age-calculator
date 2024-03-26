@@ -1,35 +1,26 @@
-# Age calculator app
+# Age Calculator
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q).
+Welcome to the Age Calculator App! 
+This web application allows users to easily calculate their age based on their birthdate. Simply input your birthdate into the form, and the app will calculate your age in years, months, and days. Additionally, you'll receive validation errors if any incorrect or invalid information is entered.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+- [Features](#features)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Technologies Used](#technologies-used)
+- [Lessons Learned](#lessons-learned)
+- [Acknowledgments](#acknowledgments)
 
-## Overview
+### Features
 
-### The challenge
+- **Age Calculation**: Users can input their birthdate through the form and view their age in years, months, and days.
 
-Users should be able to:
+- **Zodiac Sign and Chinese Zodiac**: Users can view their zodiac sign name and the Chinese zodiac animal name based on their birthdate.
 
-- View an age in years, months, and days after submitting a valid date through the form
-- Receive validation errors if:
-  - Any field is empty when the form is submitted
-  - The day number is not between 1-31
-  - The month number is not between 1-12
-  - The year is in the future
-  - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- **Dynamic Light/Dark Mode Support**: The application dynamically adjusts its color scheme based on the user's system-wide color scheme preference.
 
-Personal Challenge:
-- Users can view their zodiac sign name and the chinese zodiac animal name based on their birthdate.
+- **Animation Before Result**: Enhancing user experience, the application incorporates animations to engage users and provide visual feedback before displaying the calculated result.
 
 ### Screenshot
 
@@ -43,19 +34,27 @@ This is a screenshot of the mobile version of the application.
 
 ### Links
 
-- Solution URL: [Solution - Frontend Mentor](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f)
-- Live Site URL: [Age Calculator](https://sushcod3.github.io/age-calculator/)
+- Solution URL: [Solution - Frontend Mentor]()
+- Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
 
-## My process
-
-### Built with
+### Technologies Used
 
 - Vuejs
+- CSS
 - Bootstrap
 
-### What I learned
+### Lessons Learned
 
-- Calculation process for calculating the age effectively without making the js a mess
-- bend css and bootstrap together to work more efficiently
-- Vuejs -> Modify to my needs -> CSS -> Bootstrap if needed
-- Vuejs: :model, @click, @keyup, v-if, and :class were very helpful for me to create this project
+- **Efficient Age Calculation**: I improved my understanding of the JavaScript logic required for effective age calculation without cluttering the codebase. Implementing a streamlined calculation process was crucial for ensuring accuracy and performance.
+
+- **Integration of CSS and Bootstrap**: I successfully integrated CSS and Bootstrap to enhance the visual appeal and functionality of the application. This involved leveraging Bootstrap components and utilities while customizing styles to fit the project's requirements.
+
+- **Vue.js Customization**: I learned to adapt Vue.js to suit the specific needs of the project. Utilizing Vue.js directives such as v-model, @click, @keyup, v-if, and :class enabled me to create dynamic and interactive user interfaces efficiently.
+
+- **Dynamic Theme Switching**: Implementing dynamic light/dark mode support enhanced the accessibility and user experience of the application. I gained experience in dynamically changing the theme based on the user's system-wide color scheme preference, improving readability in various lighting conditions.
+
+- **Animation Implementation**: Adding animations to elements using keyframes enriched the user interaction and engagement within the application. By incorporating subtle animations, I enhanced the visual appeal and provided users with intuitive feedback during interactions.
+
+### Acknowledgments
+
+This project is a solution to the challenges provided by [Frontend Mentor](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f), with additional features implemented by me. 

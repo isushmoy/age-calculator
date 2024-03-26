@@ -205,6 +205,8 @@ let age = ref({ years: "--", months: "--", days: "--" });
 let zodiacSign = ref("--");
 let animalSign = ref("--");
 
+const buttonClicked = ref(false);
+
 // Submission function
 function calculate() {
   // if there's no error then it will show the age, and the zodiacs
@@ -220,18 +222,29 @@ function calculate() {
     age = calculateAge();
     zodiac();
     chineseZodiac(year.value);
+    buttonClicked.value = true;
+
+    // reset buttonClicked after a short delay
+    setTimeout(() => {
+      buttonClicked.value = false
+    }, 1000);
   }
 }
+
+// dark mode specially for the form
+const prefersDarkMode = ref(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
 </script>
 
 <template>
-  <main class="mb-5">
+  <main class="mb-5" :data-bs-theme="prefersDarkMode ? 'dark' : 'auto'">
     <dev class="interface">
       <form action="#" method="post">
         <div class="inputs row mb-3">
           <!-- the :class only applies the css if the boolean inside is true-->
           <!-- the @keyup.enter is used as an event handler for enter, it can only be used in input fields-->
           <div class="day col-4 col-md-3">
+            
             <label
               for="day"
               class="form-label"
@@ -290,7 +303,7 @@ function calculate() {
               for="year"
               class="form-label"
               :class="{
-                'text-danger': validation.emptyYear || validation.invalidYear,
+                'text-danger': validation.emptyYear || validation.invalidYear, 'animate': false
               }"
               >YEAR</label
             >
@@ -327,19 +340,19 @@ function calculate() {
         </div>
       </form>
       <div class="result mb-5">
-        <div class="years">
+        <div class="years" :class="{'animate': buttonClicked}">
           <span>{{ age.years }}</span> years
         </div>
-        <div class="months">
+        <div class="months" :class="{'animate': buttonClicked}">
           <span>{{ age.months }}</span> months
         </div>
-        <div class="days">
+        <div class="days" :class="{'animate': buttonClicked}">
           <span>{{ age.days }}</span> days
         </div>
-        <div class="zodiac">
+        <div class="zodiac" :class="{'animate': buttonClicked}">
           Zodiac: <span>{{ zodiacSign }}</span>
         </div>
-        <div class="zodiac">
+        <div class="zodiac" :class="{'animate': buttonClicked}">
           Chinese Zodiac: <span>{{ animalSign }}</span>
         </div>
       </div>
@@ -367,10 +380,12 @@ function calculate() {
   padding: 1rem;
   margin-left: -1rem;
   margin-top: -0.5rem;
+  transition: 0.4s;
 }
 .circle img:hover {
   background-color: hsl(0, 0%, 8%);
   cursor: pointer;
+  
 }
 
 .result {
@@ -424,7 +439,7 @@ main {
 
   hr {
     width: 100%;
-    border-top: 0.1rem solid black;
+    border-top: 0.1rem solid;
   }
 
   /* positions the arrow in the middle of the screen */
@@ -443,6 +458,21 @@ main {
   .zodiac {
     font-size: 1rem;
     margin: 2rem auto;
+  }
+}
+/* animation in the result */
+.animate{
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>
