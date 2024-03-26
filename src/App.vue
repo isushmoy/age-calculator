@@ -358,7 +358,7 @@ const prefersDarkMode = ref(window.matchMedia && window.matchMedia('(prefers-col
       </div>
     </dev>
   </main>
-  <footer class="attribution">Coded by <a href="#">Sushmoy</a>.</footer>
+  <footer class="attribution">Coded by <a href="https://github.com/SushCod3">Sushmoy</a>.</footer>
 </template>
 
 <style scoped>
