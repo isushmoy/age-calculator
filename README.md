@@ -24,13 +24,13 @@ This web application allows users to easily calculate their age based on their b
 
 ### Screenshot
 
-This is a screenshot of the desktop version of the application.
+Clean and intuitive desktop interface showcasing age calculation and zodiac sign details in light mode.
 
 ![Desktop Screenshot](./src/assets/screenshots/screenshot-desktop.png)
 
-This is a screenshot of the mobile version of the application.
+Mobile-friendly interface with dark mode support for improved readability in low-light conditions.
 
-![Mobile Screenshot](./src/assets/screenshots/screenshot-mobile.png)
+![Mobile Screenshot](./src/assets/screenshots/screenshot-mobile-dark.png)
 
 ### Links
 
