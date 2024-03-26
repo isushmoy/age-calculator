@@ -44,7 +44,7 @@ This is a screenshot of the mobile version of the application.
 ### Links
 
 - Solution URL: [Solution - Frontend Mentor](https://www.frontendmentor.io/solutions/efficient-age-calculation-with-javascript-and-vuejs-validation-L9dCXc8B0f)
-- Live Site URL: [Age Calculator](https://age-calculator-with-zodiac.netlify.app/](https://sushcod3.github.io/age-calculator/))
+- Live Site URL: [Age Calculator]((https://sushcod3.github.io/age-calculator/))
 
 ## My process
 
