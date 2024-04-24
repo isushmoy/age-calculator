@@ -1,6 +1,6 @@
 # Age Calculator
 
-Empower users to effortlessly calculate their age and discover their zodiac signs with precision. Utilizing advanced logic and robust form validation, this app ensures flawless functionality.
+This app empowers users to effortlessly shorten URLs with its user-friendly interface. It leverages the CleanURI API, Clipboard API, and advanced CSS for seamless functionality. Additionally, CORS proxy is utilized for enhanced API integration.
 
 Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
 
