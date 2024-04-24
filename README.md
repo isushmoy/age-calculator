@@ -1,6 +1,6 @@
 # Age Calculator
 
-This age calculator empowers users to effortlessly determine their age by inputting their birthdate into the form. With precision, the app calculates age in years, months, and days, while also revealing users' zodiac and Chinese zodiac signs. Leveraging advanced logic, the app ensures flawless functionality, complemented by robust form validation
+Empower users to effortlessly calculate their age and discover their zodiac signs with precision. Utilizing advanced logic and robust form validation, this app ensures flawless functionality.
 
 Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
 
