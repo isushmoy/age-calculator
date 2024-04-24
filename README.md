@@ -1,7 +1,6 @@
 # Age Calculator
 
-Welcome to the Age Calculator App! 
-This web application allows users to easily calculate their age based on their birthdate. Simply input your birthdate into the form, and the app will calculate your age in years, months, and days. Additionally, you'll receive validation errors if any incorrect or invalid information is entered.
+This age calculator empowers users to effortlessly determine their age by inputting their birthdate into the form. With precision, the app calculates age in years, months, and days, while also revealing users' zodiac and Chinese zodiac signs. Leveraging advanced logic, the app ensures flawless functionality, complemented by robust form validation
 
 Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
 
