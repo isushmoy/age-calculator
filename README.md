@@ -2,7 +2,7 @@
 
 This app allows users to effortlessly calculate their age and discover their zodiac signs with precision. Utilizing advanced logic and robust form validation, this app ensures flawless functionality.
 
-Live Site: [Age Calculator](https://sushcod3.github.io/age-calculator/)
+Live Site: [Age Calculator](https://isushmoy.github.io/age-calculator/)
 
 ## Table of contents
 
